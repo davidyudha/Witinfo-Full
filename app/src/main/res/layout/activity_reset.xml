@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.Reset">
+
+    <ImageView
+        android:id="@+id/image_back_login"
+        android:layout_width="35dp"
+        android:layout_height="27dp"
+        android:src="@drawable/ic_back"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="8dp"/>
+
+
+    <ImageView
+        android:id="@+id/image_plant"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:src="@drawable/plant" />
+
+    <TextView
+        android:id="@+id/text_forget_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_plant"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:text="Forgot Password"
+        android:textColor="@android:color/black"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        tools:targetApi="o"/>
+    <TextView
+        android:id="@+id/detail_forget_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_forget_password"
+        android:text="Kami membutuhkan email anda yang terdaftar untuk mengirimkan instruksi reset password"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:drawableLeft="@drawable/ic_envelope"
+        android:drawablePadding="12dp"
+        android:paddingLeft="12dp"
+        android:layout_width="276dp"
+        android:layout_height="47dp"
+        android:layout_below="@id/detail_forget_password"
+        android:background="@color/grey"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        tools:targetApi="o"/>
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="276dp"
+        android:layout_height="47dp"
+        android:layout_below="@id/edit_email"
+        android:text="Reset Password"
+        android:textAllCaps="false"
+        android:textSize="17dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/corner_signup"
+        android:layout_marginTop="28dp"
+        android:layout_centerHorizontal="true" />
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/button_signup"
+        android:visibility="gone"/>
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/image_back_produk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back"/>
+            <TextView
+                android:id="@+id/text_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="35dp"
+                android:gravity="center"
+                android:layout_toRightOf="@id/image_back_produk"
+                android:text="Detail Tanaman"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/text_nama_tanaman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_back_produk"
+                android:text="Bunga Lily"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:id="@+id/image_tanaman"
+                android:layout_width="match_parent"
+                android:layout_height="305dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/text_nama_tanaman"
+                android:layout_marginTop="20dp" />
+
+            <ImageView
+                android:id="@+id/image_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_tanaman"
+                android:src="@drawable/ic_location"
+                android:layout_marginTop="16dp"/>
+            <TextView
+                android:id="@+id/text_nama_lokasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toko Bunga Makmur"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_toRightOf="@+id/image_location"
+                android:layout_below="@+id/image_tanaman"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"/>
+            <TextView
+                android:id="@+id/text_nama_lokasi2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jl Nakula Banyuripan Jimbung Kalikotes Klaten"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:layout_below="@+id/text_nama_lokasi"
+                android:layout_toRightOf="@+id/image_location"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="16dp"/>
+
+            <Button
+                android:id="@+id/button_hubungi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_nama_lokasi"
+                android:layout_marginTop="34dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:background="@drawable/search_background"
+                android:text="Hubungi Penjual"
+                android:textAllCaps="false"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:drawableLeft="@drawable/ic_call"
+                android:paddingHorizontal="100dp"/>
+            <TextView
+                android:id="@+id/text_deskripsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_below="@+id/button_hubungi"
+                android:layout_marginTop="16dp"/>
+            <TextView
+                android:id="@+id/text_harga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_deskripsi"
+                android:text="Rp.56.000"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:id="@+id/text_deskripsi2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_harga"
+                android:layout_marginTop="8dp"
+                android:text="Merupakan sebuah tanaman yang berasal dari Belanda yang hidup di tempat yang terkena paparan sinar matahari secara langsung."
+                android:textColor="@android:color/black"
+                android:textSize="14sp"/>
+            <TextView
+                android:id="@+id/text_stok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stok : 10 tanaman"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/text_deskripsi2"
+                android:layout_marginTop="8dp"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
