@@ -3,13 +3,13 @@
     android:orientation="vertical"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:gravity="center">
     <RelativeLayout
         android:id="@+id/category_hias"
         android:layout_width="160dp"
         android:layout_height="220dp"
-        android:background="@drawable/shadow"
-        android:elevation="6dp">
+        android:background="@drawable/shadow">
         <ImageView
             android:id="@+id/image_hasil_kategori"
             android:layout_centerHorizontal="true"
@@ -26,7 +26,8 @@
             android:textSize="12sp"
             android:textStyle="bold"
             android:textAlignment="center"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/black"
+            android:gravity="center_horizontal" />
         <TextView
             android:id="@+id/harga_tanaman"
             android:layout_width="match_parent"
@@ -35,7 +36,8 @@
             android:text="Pacar cina"
             android:textSize="12sp"
             android:textAlignment="center"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/black"
+            android:gravity="center_horizontal" />
     </RelativeLayout>
 
 

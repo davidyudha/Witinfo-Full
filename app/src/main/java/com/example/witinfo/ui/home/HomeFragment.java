@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -15,7 +16,7 @@ import com.example.witinfo.R;
 import com.example.witinfo.ui.kategori_buah.KategoriBuah;
 
 public class HomeFragment extends Fragment {
-    RelativeLayout categoryhias, categorybuah, categorysayur, categoryobat;
+    TextView categoryhias, categorybuah, categorysayur, categoryobat;
 
     @Nullable
     @Override

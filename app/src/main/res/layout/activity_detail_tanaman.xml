@@ -47,6 +47,7 @@
                 android:layout_height="305dp"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@+id/text_nama_tanaman"
+                android:src="@drawable/plant"
                 android:layout_marginTop="20dp" />
 
             <ImageView
