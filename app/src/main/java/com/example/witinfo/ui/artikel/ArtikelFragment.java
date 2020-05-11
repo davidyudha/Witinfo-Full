@@ -60,8 +60,8 @@ public class ArtikelFragment extends Fragment {
                     DetailArtikel data = childs.getValue(DetailArtikel.class);
                     itemValuesA.add(new ItemDataArtikel(
                             data.getFoto() + " ",
-                            data.getIsi() + "",
-                            data.getJudul() + ""));
+                            data.getJudul() + "",
+                            data.getIsi() + ""));
                 }
 
                 itemAdapterA = new ItemAdapterArtikel(getActivity(), itemValuesA);
@@ -74,6 +74,7 @@ public class ArtikelFragment extends Fragment {
                 //null
             }
         });
+
         return view;
     }
 }

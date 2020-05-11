@@ -1,7 +1,11 @@
 package com.example.witinfo;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.view.animation.AnimationUtils;
 
+import com.example.witinfo.ui.artikel.ArtikelFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,5 +33,4 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
     }
-
 }

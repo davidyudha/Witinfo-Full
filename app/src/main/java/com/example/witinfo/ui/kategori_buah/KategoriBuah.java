@@ -88,8 +88,6 @@ public class KategoriBuah extends AppCompatActivity {
             }
         });
 
-
-
     }
 
     public void backHomepage(View view) {

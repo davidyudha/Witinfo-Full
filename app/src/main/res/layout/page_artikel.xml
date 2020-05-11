@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.witinfo.MainActivity"
+    tools:context="com.example.witinfo.ui.artikel.HalamanArtikel"
     android:layout_margin="16dp"
     android:orientation="vertical">
 
@@ -15,19 +15,20 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-      <ImageButton
+      <ImageView
           android:id="@+id/coverartikel"
           android:layout_width="35dp"
           android:layout_height="27dp"
           android:background="@drawable/ic_back"
           android:layout_marginTop="16dp"
-          android:layout_marginLeft="16dp"/>
+          android:layout_marginLeft="16dp"
+          android:onClick="backArtikelFragment"/>
 
       <ImageView
           android:id="@+id/gambarartikel"
           android:layout_width="match_parent"
           android:layout_height="268dp"
-          android:background="@drawable/plant"
+          android:src="@drawable/plant"
           android:layout_below="@+id/coverartikel"/>
 
       <TextView

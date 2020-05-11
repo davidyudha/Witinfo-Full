@@ -1,6 +1,7 @@
 package com.example.witinfo.ui.artikel;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -53,7 +54,11 @@ public class ItemAdapterArtikel extends RecyclerView.Adapter<ItemAdapterArtikel.
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-
+                        Intent intent = new Intent(context, HalamanArtikel.class);
+                        intent.putExtra("img_url", data.imgA);
+                        intent.putExtra("title_url", data.titleA);
+                        intent.putExtra("desc_url", data.descA);
+                        context.startActivity(intent);
                     }
                 }
         );
