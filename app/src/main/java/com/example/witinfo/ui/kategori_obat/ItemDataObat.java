@@ -1,26 +1,26 @@
-package com.example.witinfo.ui.kategori_hias;
+package com.example.witinfo.ui.kategori_obat;
 
 import android.os.Parcel;
 import android.os.Parcelable;
 
-public class ItemDataHias implements Parcelable {
+public class ItemDataObat implements Parcelable {
     public String pictK,namaK, hargaK;
 
-    protected ItemDataHias(Parcel in) {
+    protected ItemDataObat(Parcel in) {
         pictK = in.readString();
         namaK = in.readString();
         hargaK = in.readString();
     }
 
-    public static final Creator<ItemDataHias> CREATOR = new Creator<ItemDataHias>() {
+    public static final Creator<ItemDataObat> CREATOR = new Creator<ItemDataObat>() {
         @Override
-        public ItemDataHias createFromParcel(Parcel in) {
-            return new ItemDataHias(in);
+        public ItemDataObat createFromParcel(Parcel in) {
+            return new ItemDataObat(in);
         }
 
         @Override
-        public ItemDataHias[] newArray(int size) {
-            return new ItemDataHias[size];
+        public ItemDataObat[] newArray(int size) {
+            return new ItemDataObat[size];
         }
     };
 
@@ -49,7 +49,7 @@ public class ItemDataHias implements Parcelable {
     }
 
 
-    public ItemDataHias(String pictK, String namaK, String hargaK) {
+    public ItemDataObat(String pictK, String namaK, String hargaK) {
         this.pictK = pictK;
         this.namaK = namaK;
         this.hargaK = hargaK;

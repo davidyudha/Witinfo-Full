@@ -1,6 +1,7 @@
 package com.example.witinfo.ui.kategori_hias;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -52,7 +53,11 @@ public class ItemAdapterHias extends RecyclerView.Adapter<ItemAdapterHias.ViewHo
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-
+                        Intent detail = new Intent(context, DetailTanaman.class);
+                        detail.putExtra("img_url", data.pictK);
+                        detail.putExtra("namatanaman_url", data.namaK);
+                        detail.putExtra("harga_url", data.hargaK);
+                        context.startActivity(detail);
                     }
                 }
         );
@@ -78,4 +83,5 @@ public class ItemAdapterHias extends RecyclerView.Adapter<ItemAdapterHias.ViewHo
 
         }
     }
+
 }

@@ -6,7 +6,7 @@
     android:padding="16dp"
     android:gravity="center">
     <RelativeLayout
-        android:id="@+id/category_sayur"
+        android:id="@+id/category_obat"
         android:layout_width="160dp"
         android:layout_height="220dp"
         android:background="@drawable/shadow">

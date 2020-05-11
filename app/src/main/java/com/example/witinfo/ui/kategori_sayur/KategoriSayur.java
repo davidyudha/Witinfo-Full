@@ -1,4 +1,4 @@
-package com.example.witinfo.ui.kategori_hias;
+package com.example.witinfo.ui.kategori_sayur;
 
 import android.content.Intent;
 import android.os.Build;
@@ -23,11 +23,11 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class KategoriHias extends AppCompatActivity {
+public class KategoriSayur extends AppCompatActivity {
     //recyclerview
-    ArrayList<ItemDataHias> itemValuesK = new ArrayList<>();
+    ArrayList<ItemDataSayur> itemValuesK = new ArrayList<>();
     private RecyclerView recyclerViewK;
-    private ItemAdapterHias itemAdapterK;
+    private ItemAdapterSayur itemAdapterK;
 
     ImageView back;
 
@@ -35,18 +35,18 @@ public class KategoriHias extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kategori_hias);
+        setContentView(R.layout.activity_kategori_sayur);
 
         getSupportActionBar().hide();
 
         back = findViewById(R.id.back);
 
         //recyclerView homepage
-        recyclerViewK = findViewById(R.id.hasil_kategorihias);
+        recyclerViewK = findViewById(R.id.hasil_kategorisayur);
 
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("hias");
+        DatabaseReference myRef = database.getReference("sayur");
         // Read from the database
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
@@ -55,16 +55,16 @@ public class KategoriHias extends AppCompatActivity {
                 // whenever data at this location is updated.
                 for (DataSnapshot childs : dataSnapshot.getChildren()) {
                     Log.d("debugging", childs.getKey());
-                    DetailHias data = childs.getValue(DetailHias.class);
+                    DetailSayur data = childs.getValue(DetailSayur.class);
                     Log.d("debugging2", "" + data.getHarga());
-                    itemValuesK.add(new ItemDataHias(
+                    itemValuesK.add(new ItemDataSayur(
                             data.getFoto() +"",
                             data.getNama() + "",
                             "Rp. " + data.getHarga() + ""));
                 }
 
-                itemAdapterK = new ItemAdapterHias(KategoriHias.this, itemValuesK);
-                recyclerViewK.setLayoutManager(new GridLayoutManager(KategoriHias.this, 2));
+                itemAdapterK = new ItemAdapterSayur(KategoriSayur.this, itemValuesK);
+                recyclerViewK.setLayoutManager(new GridLayoutManager(KategoriSayur.this, 2));
                 recyclerViewK.setAdapter(itemAdapterK);
 
 

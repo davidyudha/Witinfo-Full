@@ -11,11 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.detail.DetailTanaman" />
         <activity android:name=".ui.login.SignUp" />
         <activity android:name=".ui.login.Reset" />
         <activity android:name=".ui.kategori_buah.KategoriBuah" />
+        <activity android:name=".ui.kategori_buah.DetailTanaman" />
         <activity android:name=".ui.kategori_hias.KategoriHias" />
+        <activity android:name=".ui.kategori_hias.DetailTanaman" />
+        <activity android:name=".ui.kategori_obat.KategoriObat" />
+        <activity android:name=".ui.kategori_obat.DetailTanaman" />
+        <activity android:name=".ui.kategori_sayur.KategoriSayur" />
+        <activity android:name=".ui.kategori_sayur.DetailTanaman" />
         <activity android:name=".ui.artikel.HalamanArtikel" />
         <activity android:name=".ui.login.Login">
             <intent-filter>

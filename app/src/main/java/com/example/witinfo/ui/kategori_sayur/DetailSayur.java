@@ -1,6 +1,6 @@
-package com.example.witinfo.ui.kategori_hias;
+package com.example.witinfo.ui.kategori_sayur;
 
-class DetailHias {
+class DetailSayur {
     String foto, nama;
     long harga;
 

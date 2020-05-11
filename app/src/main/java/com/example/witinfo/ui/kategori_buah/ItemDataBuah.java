@@ -5,9 +5,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 public class ItemDataBuah implements Parcelable {
-    public String pictK;
-    public String namaK;
-    public String hargaK;
+    public String pictK,namaK, hargaK;
 
     protected ItemDataBuah(Parcel in) {
         pictK = in.readString();
@@ -50,6 +48,7 @@ public class ItemDataBuah implements Parcelable {
     public void setHargaK(String hargaK) {
         this.hargaK = hargaK;
     }
+
 
     public ItemDataBuah(String pictK, String namaK, String hargaK) {
         this.pictK = pictK;

@@ -1,6 +1,7 @@
 package com.example.witinfo.ui.kategori_buah;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.witinfo.MyAppGlideModule;
 import com.example.witinfo.R;
+import com.example.witinfo.ui.artikel.HalamanArtikel;
 import com.firebase.ui.storage.images.FirebaseImageLoader;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -80,7 +82,11 @@ public class ItemAdapterBuah extends RecyclerView.Adapter<ItemAdapterBuah.ViewHo
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-
+                        Intent detail = new Intent(context, DetailTanaman.class);
+                        detail.putExtra("img_url", data.pictK);
+                        detail.putExtra("namatanaman_url", data.namaK);
+                        detail.putExtra("harga_url", data.hargaK);
+                        context.startActivity(detail);
                     }
                 }
         );
@@ -106,4 +112,5 @@ public class ItemAdapterBuah extends RecyclerView.Adapter<ItemAdapterBuah.ViewHo
 
         }
     }
+
 }

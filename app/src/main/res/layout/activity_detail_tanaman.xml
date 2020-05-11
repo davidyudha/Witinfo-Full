@@ -17,7 +17,8 @@
                 android:id="@+id/image_back_produk"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_back"/>
+                android:src="@drawable/ic_back"
+                android:onClick="back"/>
             <TextView
                 android:id="@+id/text_detail"
                 android:layout_width="match_parent"
@@ -68,7 +69,8 @@
                 android:layout_toRightOf="@+id/image_location"
                 android:layout_below="@+id/image_tanaman"
                 android:layout_marginTop="16dp"
-                android:layout_marginLeft="16dp"/>
+                android:layout_marginLeft="16dp"
+                android:onClick="maps"/>
             <TextView
                 android:id="@+id/text_nama_lokasi2"
                 android:layout_width="wrap_content"
@@ -95,7 +97,8 @@
                 android:textStyle="bold"
                 android:textColor="@android:color/white"
                 android:drawableLeft="@drawable/ic_call"
-                android:paddingHorizontal="100dp"/>
+                android:onClick="telfon"
+                android:paddingHorizontal="10dp"/>
             <TextView
                 android:id="@+id/text_deskripsi"
                 android:layout_width="wrap_content"
