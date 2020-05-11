@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WITinfo</string>
+    <string name="title_home">Home</string>
+    <string name="title_artikel">Article</string>
+    <string name="title_profil">Profil</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="log_out">Log Out</string>
+    <string name="artikel">Article</string>
+    <string name="halaman_utama">Home   Page</string>
+    <string name="tanaman_hias">Decorative Plants</string>
+    <string name="tanaman_sayur">Vegetable Plants</string>
+    <string name="tanaman_buah">Fruit Plants</string>
+    <string name="tanaman_obat">Medicinal Plants</string>
+    <string name="detail_tanaman">Plant Detail</string>
+    <string name="hubungi_penjual">Call the Seller</string>
+    <string name="deskripsi">Description</string>
+    <string name="masukkan_password_baru">Enter new password</string>
+</resources>

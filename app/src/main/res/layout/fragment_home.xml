@@ -28,8 +28,7 @@
             android:textSize="30dp"
             android:textColor="@color/colorPrimaryDark"
             android:textStyle="bold"
-            android:text="Halaman
-                      Utama"/>
+            android:text="@string/halaman_utama"/>
     </RelativeLayout>
 
     <RelativeLayout
@@ -51,8 +50,7 @@
             android:textColor="@android:color/white"
             android:textStyle="bold"
             android:textSize="16dp"
-            android:text="Tanaman
-                           Hias"/>
+            android:text="@string/tanaman_hias"/>
         <TextView
             android:id="@+id/category_sayur"
             android:layout_width="160dp"
@@ -66,8 +64,7 @@
             android:textColor="@android:color/white"
             android:textStyle="bold"
             android:textSize="16dp"
-            android:text="Tanaman
-                           Sayur"/>
+            android:text="@string/tanaman_sayur"/>
         <TextView
             android:id="@+id/category_buah"
             android:layout_width="160dp"
@@ -81,8 +78,7 @@
             android:textColor="@android:color/white"
             android:textStyle="bold"
             android:textSize="16dp"
-            android:text="Tanaman
-                           Buah"/>
+            android:text="@string/tanaman_buah"/>
         <TextView
             android:id="@+id/category_obat"
             android:layout_width="160dp"
@@ -97,8 +93,7 @@
             android:textColor="@android:color/white"
             android:textStyle="bold"
             android:textSize="16dp"
-            android:text="Tanaman
-                           Obat"/>
+            android:text="@string/tanaman_obat"/>
 
     </RelativeLayout>
 

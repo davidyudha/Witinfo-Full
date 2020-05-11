@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">WITinfo</string>
     <string name="title_home">Home</string>
@@ -6,7 +7,7 @@
     <string name="forgot_password"><u>Lupa Password ?</u></string>
     <string name="log_out"><u>Keluar</u></string>
     <string name="artikel">Artikel</string>
-    <string name="halaman_utama">Halaman Utama</string>
+    <string name="halaman_utama">Halaman  Utama</string>
     <string name="tanaman_hias">Tanaman Hias</string>
     <string name="tanaman_sayur">Tanaman Sayur</string>
     <string name="tanaman_buah">Tanaman Buah</string>
@@ -14,5 +15,5 @@
     <string name="detail_tanaman">Detail Tanaman</string>
     <string name="hubungi_penjual">Hubungi Penjual</string>
     <string name="deskripsi">Deskripsi</string>
-    <string name="masukkan_password_baru">Masukkan password baru</string>
+    <string name="masukkan_password_baru">Masukkan password</string>
 </resources>

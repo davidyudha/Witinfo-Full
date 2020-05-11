@@ -137,7 +137,7 @@
                 android:textSize="16sp"
                 android:textColor="@android:color/black"
                 android:text="passwordwitninfo"
-                android:hint="Masukkan password baru"
+                android:hint="@string/masukkan_password_baru"
                 android:enabled="false"
                 />
             <ImageView
@@ -150,22 +150,11 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/aturbahasa"
+        android:id="@+id/logout"
         android:layout_below="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:text="Setel Bahasa"
-        android:textStyle="bold"
-        style="?android:attr/borderlessButtonStyle"
-        />
-
-    <TextView
-        android:id="@+id/logout"
-        android:layout_below="@+id/aturbahasa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="50dp"
         android:text="@string/log_out"
         android:textStyle="bold"
         style="?android:attr/borderlessButtonStyle"

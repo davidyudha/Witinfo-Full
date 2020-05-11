@@ -23,7 +23,7 @@
         android:layout_marginRight="35dp"
         android:layout_marginTop="14dp"
         android:gravity="center"
-        android:text="TANAMAN OBAT"
+        android:text="@string/tanaman_obat"
         android:textColor="@android:color/black"
         android:textSize="21dp"
         android:textStyle="bold"/>

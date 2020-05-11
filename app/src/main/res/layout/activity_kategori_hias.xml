@@ -23,7 +23,7 @@
         android:layout_marginRight="35dp"
         android:layout_marginTop="14dp"
         android:gravity="center"
-        android:text="TANAMAN HIAS"
+        android:text="@string/tanaman_hias"
         android:textColor="@android:color/black"
         android:textSize="21dp"
         android:textStyle="bold"/>
