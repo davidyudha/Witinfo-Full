@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/img_article"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:src="@drawable/ic_launcher_background"
+        />
+    <TextView
+        android:id="@+id/title_artikel"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_toRightOf="@+id/img_article"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="30dp"
+        android:text="Judul Artikel"
+        android:textSize="14dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/desc_artikel"
+        android:layout_width="211sp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/img_article"
+        android:layout_below="@+id/title_artikel"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="55dp"
+        android:text="isi artikel panjang ............"
+        android:textSize="12dp"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>

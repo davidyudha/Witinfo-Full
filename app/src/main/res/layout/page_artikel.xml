@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.witinfo.MainActivity"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <ImageButton
+          android:id="@+id/coverartikel"
+          android:layout_width="35dp"
+          android:layout_height="27dp"
+          android:background="@drawable/ic_back"
+          android:layout_marginTop="16dp"
+          android:layout_marginLeft="16dp"/>
+
+      <ImageView
+          android:id="@+id/gambarartikel"
+          android:layout_width="match_parent"
+          android:layout_height="268dp"
+          android:background="@drawable/plant"
+          android:layout_below="@+id/coverartikel"/>
+
+      <TextView
+          android:id="@+id/judul_halamanartikel"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginHorizontal="40dp"
+          android:layout_below="@+id/gambarartikel"
+          android:text="7 Tips Tanaman di Kos Menjadi Jauh Lebih Asri"
+          android:textColor="@android:color/black"
+          android:textSize="18sp"
+          android:textStyle="bold"
+          android:textAlignment="center"
+          android:gravity="center_horizontal" />
+
+      <TextView
+          android:id="@+id/isi_bacaanartikel"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_below="@+id/judul_halamanartikel"
+          android:layout_marginTop="24dp"
+          android:layout_marginLeft="16dp"
+          android:layout_marginRight="16dp"
+          android:layout_marginBottom="55dp"
+          android:text="         Hidup di lingkungan yang bersih dan asri adalah impian
+          semua orang tak terkecuali bagi anak perantauan yang ingin
+          menikmati suasana asri di rumah kos yang bukan miliknya,
+          butuh inovasi dan kreativitas tinggi untuk mewujudkannya,
+          Sudah sangat jarang kita temui anak kos yang sadar akan lingkungan sehat walaupun dengan tempat seadannya dan
+          juga bukan miliknya sendiri serta berukuran cenderung
+          sempit bukan alasan untuk tidak peduli akan lingkungan
+          yang bersih dan hijau.
+              Kali ini kita coba berinovasi mengubah kebiasaan kita sebagai anak kos yang cenderung malas akan kesadaran lingkungan dengan alasan bukan rumah kita sendiri kita ubah menjadi kebiasaan yang menyenangkan di rumah yang bukan milik kita sendiri. Langkah pertama adalah izin kita kepada pemilik rumah, kita izin untuk membuat penghijauan minimalis di depan kamar dengan tujuan menciptakan suasana kos yang asri bersih dan juga sejuk, kita tidalah membutuhkan banyak tempat untuk rencana kita ini."
+                    >
+
+      </TextView>
+    </RelativeLayout>
+  </ScrollView>
+
+</RelativeLayout>
